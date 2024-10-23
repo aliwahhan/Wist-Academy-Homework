@@ -1,0 +1,300 @@
+/*  Start Basic styles */
+:root {
+    --main-color: #0E3128;
+    --bg-btn-color: #8B9793;
+    --bg-section: #E2E7E5;
+    --color-btn: #E2E5E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 980px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+
+/*  End Basic styles */
+/* Start Header */
+header {
+    background-color: var(--bg-section);
+    position: relative;
+
+}
+
+header .container {
+    position: relative;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:991px) {
+    header .container {
+        flex-direction: column;
+        padding-bottom: 20px;
+        gap: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    header .container .mega-menu {
+        display: block;
+    }
+
+    header .container .nav-header {
+        display: none;
+
+    }
+
+    header .container .bottom {
+        display: none;
+    }
+
+
+}
+
+header .container .logo {
+    height: 80px;
+}
+
+header .container .logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+header .container .nav-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .container .nav-header ul {
+    display: flex;
+}
+
+header .container .nav-header ul li a {
+    padding: 20px 15px;
+}
+
+header .container .nav-header ul li a:hover {
+    /* border-bottom: 1px solid var(--main-color); */
+
+}
+
+
+
+header .container .nav-header .mega-menu {
+    display: none;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--bg-section);
+    margin-right: 10px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.primary-btn {
+    background-color: var(--main-color);
+    color: var(--color-btn);
+}
+
+
+header .hero-content .image {
+    margin: 60px 40px 0px 40px;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .hero-content .image img:first-child {
+    width: 100%;
+    position: relative;
+    border: 6px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+header .hero-content .image img:last-child {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    right: -40px;
+    top: -25px;
+
+}
+
+/* End Header */
+/*  Start Features  */
+
+/*  End Features  */
+/* Start Empower  */
+.empower .info {
+    position: relative;
+}
+
+.empower .info .box-spendings {
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px 10px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.empower .info .box-income {
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+/* End Empower  */
+/* Start Cash Management  */
+.cash-management .card .box:first-child {
+    position: relative;
+}
+
+.cash-management .card .box:first-child::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #183028 24px), repeating-linear-gradient(#2F5E4E, #2F5E4E);
+    background-color: #183028;
+    z-index: -1;
+    border-radius: 10px;
+
+}
+
+/* End Cash Management  */
+/* Start Lengthen and fortify  */
+.Lengthen {
+    position: relative;
+    height: 400px;
+
+}
+
+.Lengthen .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Lengthen .email-subscription {
+    background-color: #f5deb32b;
+    width: fit-content;
+}
+
+.Lengthen .email-subscription input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #36D399;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.Lengthen .email-subscription button {
+    background-color: #36D399;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.Lengthen .phone-mockup {
+    position: relative;
+    height: 250px;
+
+    top: -100px;
+}
+
+.Lengthen .phone-mockup img {
+    position: absolute;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+/* End Lengthen and fortify  */
+
+/* Footer Section */
+footer {
+    background-color: #f3f3f3;
+    padding: 40px;
+    color: #333;
+}
+
+
+footer .logo img {
+    width: 100px;
+}
+
+.footer-links ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+    color: #2F5E4E;
+}
